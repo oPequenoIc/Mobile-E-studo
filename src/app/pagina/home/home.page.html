@@ -1,0 +1,74 @@
+<ion-content>
+  <ion-item>
+    <ion-avatar size="small" slot="start">
+    <ion-img src="https://cdn.discordapp.com/attachments/918227498075050059/1231778855207964713/image.png?ex=66383274&is=6625bd74&hm=ed886391692272322f306dbb17c3cf2752e3bbf49605c94d88ed46fb4485d499&"></ion-img>
+ </ion-avatar>
+    <ion-button slot="end" (click)="abrirPagina('login')">entrar</ion-button><ion-button (click)="abrirPagina('cadastro')"slot="end">Cadastrar</ion-button>
+  </ion-item>
+  <ion-item>
+    <h6>Seus Cursos</h6>
+  </ion-item>
+<ion-item>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        E-studo: Sua porta de entrada para o universo da tecnologia!</ion-card-title>
+
+    </ion-card-header>
+  <img alt="Silhouette of mountains" src="https://ampliar.org.br/wp-content/uploads/2022/12/ti-saiba-como-ingressar-no-mercado-de-tecnologia-com-os-cursos-da-ampliar.webp" />
+    </ion-card>
+</ion-item>
+<p></p>
+<ion-item>
+  <ion-text class="ion-text-center">
+    Seja bem-vindo ao E-studo, a plataforma completa de ensino online nas áreas da tecnologia!
+  </ion-text>
+</ion-item>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Aqui você:</ion-card-title>
+
+  </ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img alt="Silhouette of mountains" src="https://png.pngtree.com/png-clipart/20190514/ourlarge/pngtree-teacher-with-lovely-and-simple-glasses-png-image_1034082.jpg" />
+       </ion-avatar>
+        <ion-label> - Aprende com centenas de professores</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="end">
+          <img alt="Silhouette of mountains" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSsyarRy23kCeljc-ZvooDEQCnQkzZ7cxxgg&usqp=CAU" />
+  </ion-avatar>
+        <ion-label>Conquista certificação de finalização</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img alt="Silhouette of mountains" src="https://img.freepik.com/vetores-gratis/livros-stack-realistic_1284-4735.jpg" />
+</ion-avatar>
+        <ion-label> - Encontra o curso ideal para você</ion-label>
+      </ion-item>
+
+
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+</ion-content>
+<ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+<ion-menu-button></ion-menu-button>
+      Opções
+    </ion-tab-button>
+    <ion-tab-button (click)="abrirPagina('cursos')"tab="library">
+      <ion-icon name="library"></ion-icon>
+      Cursos
+    </ion-tab-button>
+    <ion-tab-button tab="search">
+      <ion-icon name="search"></ion-icon>
+      Pesquisar
+    </ion-tab-button>
+  </ion-tab-bar>

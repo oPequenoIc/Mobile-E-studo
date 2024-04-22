@@ -1,0 +1,60 @@
+<link rel ="stylesheet" heref="cadastro.page.scss">
+<ion-header color="primary">
+  <ion-toolbar color="white">
+    <ion-menu-button slot="end"></ion-menu-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-item>
+    <ion-title class="ion-text-center">Cadastre-se</ion-title>
+</ion-item>
+      <ion-list>
+
+<ion-item>
+  <div class="input-email">
+            <ion-label>E-mail</ion-label>
+            <ion-input label="" label-placement="floating" fill="outline" placeholder="Insira seu e-mail"></ion-input>
+  </div>
+          </ion-item>
+
+<ion-item>
+  <div class="input-senha">
+    <ion-label>Senha</ion-label>
+            <ion-input label="" label-placement="floating" fill="outline" placeholder="Insira sua senha"></ion-input>
+  </div>
+</ion-item>
+
+<ion-item>
+  <div class="input-conf-senha">
+    <ion-label>Confirmar Senha</ion-label>
+  <ion-input label="" label-placement="floating" fill="outline" placeholder="Confirme sua senha"></ion-input>
+  </div>
+</ion-item>
+
+<ion-item>
+  <ion-checkbox>Eu concordo com os termos e condições de usúario</ion-checkbox> 
+</ion-item>
+
+<ion-item>
+  <div class="button-cad">
+           <ion-button size="default" expand="" fill="" id="present-alert" (click)="abrirPagina('home')">Cadastrar</ion-button>
+           </div>
+            <ion-alert
+             trigger="present-alert"
+                 header="Cadastro Concluido"
+                message="Cadastro finalizado com sucesso."
+              [buttons]="alertButtons">
+            </ion-alert>
+</ion-item> 
+<ion-item>
+  <div class="button-entrar">
+    <p>Já possui uma conta? </p>
+      <ion-button size="default" expand="block" fill="" (click)="abrirPagina('login')">Entrar</ion-button> </div>
+</ion-item>
+  
+                
+  </ion-list>
+  
+</ion-content>
+
