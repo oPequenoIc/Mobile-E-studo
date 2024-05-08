@@ -31,6 +31,17 @@ const routes: Routes = [
     path: 'homelogado',
     loadChildren: () => import('./pagina/homelogado/homelogado.module').then( m => m.HomelogadoPageModule)
   },
+  {
+    path: 'pagamento',
+    loadChildren: () => import('./pagina/pagamento/pagamento.module').then( m => m.PagamentoPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./pagina/perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+
+
+
 
 ];
 
