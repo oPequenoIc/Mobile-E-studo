@@ -1,8 +1,8 @@
 <ion-content>
   <ion-item class="topo">
 <ion-text class="title">AprendeAqui!</ion-text>
-    <ion-button color="secondary" shape="round" (click)="abrirPagina('login')">entrar</ion-button>
-    <ion-button color="secondary" shape="round" (click)="abrirPagina('cadastro')">Cadastrar</ion-button>
+    <ion-button class="botao-entrar" color="secondary" shape="round" (click)="abrirPagina('login')">entrar</ion-button>
+    <ion-button class="botao-cadastrar" color="secondary" shape="round" (click)="abrirPagina('cadastro')">Cadastrar</ion-button>
   </ion-item>
 
 <ion-item>
@@ -79,16 +79,18 @@
 </ion-content>
 
 
-<ion-tab-bar color="secondary" slot="bottom">
-    <ion-tab-button tab="home">
-<ion-menu-button></ion-menu-button>
-Opções
-    </ion-tab-button>
-    <ion-tab-button (click)="abrirPagina('cursos')"tab="Cursos">
+<ion-tab-bar class="barra-bottom" color="secondary" slot="bottom">
+    <ion-tab-button class="barra-botoes" tab="home">
+      <ion-menu-button></ion-menu-button>
+        Opções
+      </ion-tab-button>
+
+    <ion-tab-button class="barra-botoes" (click)="abrirPagina('cursos')"tab="Cursos">
       <ion-icon name="fast-food"></ion-icon>
-      Cursos
-    </ion-tab-button>
-    <ion-tab-button tab="search">
+        Cursos
+      </ion-tab-button>
+
+    <ion-tab-button class="barra-botoes" tab="search">
       <ion-icon name="search"></ion-icon>
       Pesquisar
     </ion-tab-button>

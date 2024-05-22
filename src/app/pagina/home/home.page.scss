@@ -3,7 +3,12 @@
     margin-top: 10px;
     font-family: "Abel"
 }
-ion-button{
+.botao-entrar{
+    height: 40px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.botao-cadastrar{
     height: 40px;
     width: 100px;
     margin-bottom: 20px;
@@ -13,14 +18,10 @@ ion-button{
     margin-bottom: 20px;
     font-size: 30px;
 }
-ion-tab-bar ion-tab-button{
+.barra-bottom .barra-botoes{
     margin-bottom:20px
 }
-ion-card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
 .butao{
     display: flex;
     margin-left: 40px;
